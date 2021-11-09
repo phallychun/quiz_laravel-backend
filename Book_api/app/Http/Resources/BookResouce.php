@@ -16,6 +16,8 @@ class BookResouce extends JsonResource
     {
         // return parent::toArray($request);
         return[
+            "id"=>$this->id,
+            "author_id"=>$this->author_id,
             "title"=>$this->title,
             "body"=>$this->body,
             "created_at"=>$this->created_at->format('j,l F y | h:i:s A') ,

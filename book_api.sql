@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2021 at 03:34 AM
+-- Generation Time: Nov 09, 2021 at 04:11 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -65,11 +65,12 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `author_id`, `title`, `body`, `created_at`, `updated_at`) VALUES
-(1, 1, 'hello wor', 'Hellow orld1', '2021-11-04 19:28:54', '2021-11-04 19:28:54'),
 (2, 1, 'the boss', 'Hellow orld1', '2021-11-04 19:29:07', '2021-11-04 19:29:07'),
 (3, 2, 'hunii wol', 'Hellow orld1', '2021-11-04 19:29:27', '2021-11-04 19:29:27'),
 (4, 2, 'love story', 'The love story in the world', '2021-11-04 19:29:52', '2021-11-04 19:29:52'),
-(5, 2, 'Why not me', 'The love story in the world', '2021-11-04 19:29:56', '2021-11-04 19:30:41');
+(5, 2, 'Why not me', 'The love story in the world', '2021-11-04 19:29:56', '2021-11-04 19:30:41'),
+(7, 3, 'The spider man', 'The famous story in USA', '2021-11-09 07:38:45', '2021-11-09 08:01:26'),
+(8, 1, 'Testing', 'The second testing', '2021-11-09 07:39:48', '2021-11-09 07:59:21');
 
 -- --------------------------------------------------------
 
@@ -223,7 +224,7 @@ ALTER TABLE `authors`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
